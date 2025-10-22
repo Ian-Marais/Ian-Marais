@@ -2,24 +2,30 @@
 
 ### My Personal Website
 https://ianmarais.com/
+Made in WordPress
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4178818c-46d5-4b8e-ab7c-324a8f61d3ba" />
 
 ### Business website
 (https://crcs.ianmarais.com/)
+Made in WordPress
 
 <img width="1788" height="919" alt="Screenshot 2025-10-21 144042" src="https://github.com/user-attachments/assets/83a39fff-67be-453c-83dd-e6dd66762424" />
 
 ### Online Remote Support Business WEbsite
 https://Ian-Marais.github.io/Remote_Support/#contact
+Made with HTML, CSS & Bootstrap
 
 <img width="1785" height="944" alt="Screenshot 2025-10-21 202552" src="https://github.com/user-attachments/assets/89657fbc-4f9f-4115-af06-e171834c5287" />
 
 # https://museum.griekwastad.co.za/
 <img width="1811" height="918" alt="Screenshot 2025-10-21 220843" src="https://github.com/user-attachments/assets/416a9e77-687b-43e4-ac9e-978df998556f" />
+Made in WordPress
 
 # Snake game 1
 ![Recording 2025-10-21 213346](https://github.com/user-attachments/assets/e36d38bc-875a-4d75-aca7-e50177866887)
+<img width="1795" height="945" alt="Screenshot 2025-10-22 113141" src="https://github.com/user-attachments/assets/56e1ddae-06af-4731-adae-528d8f44b6c8" />
+<img width="1811" height="943" alt="Screenshot 2025-10-22 113203" src="https://github.com/user-attachments/assets/8693989e-4a71-43e4-af02-daec6af250b0" />
 
 # Snake game 2
 ![Recording 2025-10-21 214350](https://github.com/user-attachments/assets/877a831b-a95a-45cc-b1e1-70b9a64fd5fa)
