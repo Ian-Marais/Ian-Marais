@@ -3,21 +3,21 @@ Made in WordPress
 (https://ianmarais.com/)
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4178818c-46d5-4b8e-ab7c-324a8f61d3ba" />
 
-### Business website
+### Business Website
 Made in WordPress
 (https://crcs.ianmarais.com/)
 <img width="1788" height="919" alt="Screenshot 2025-10-21 144042" src="https://github.com/user-attachments/assets/83a39fff-67be-453c-83dd-e6dd66762424" />
 
 
-### Online Remote Support Business WEbsite
+### Online Remote Support Business Website
 Made with HTML, CSS & Bootstrap
-https://Ian-Marais.github.io/Remote_Support/#contact
+(https://Ian-Marais.github.io/Remote_Support/#contact)
 <img width="1785" height="944" alt="Screenshot 2025-10-21 202552" src="https://github.com/user-attachments/assets/89657fbc-4f9f-4115-af06-e171834c5287" />
 
 
 # Griekwastad Museum
-https://museum.griekwastad.co.za/
 Made in WordPress
+(https://museum.griekwastad.co.za/)
 <img width="1811" height="918" alt="Screenshot 2025-10-21 220843" src="https://github.com/user-attachments/assets/416a9e77-687b-43e4-ac9e-978df998556f" />
 
 # Snake game 1
