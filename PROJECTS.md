@@ -15,7 +15,8 @@ https://Ian-Marais.github.io/Remote_Support/#contact
 <img width="1785" height="944" alt="Screenshot 2025-10-21 202552" src="https://github.com/user-attachments/assets/89657fbc-4f9f-4115-af06-e171834c5287" />
 
 
-# https://museum.griekwastad.co.za/
+# Griekwastad Museum
+https://museum.griekwastad.co.za/
 Made in WordPress
 <img width="1811" height="918" alt="Screenshot 2025-10-21 220843" src="https://github.com/user-attachments/assets/416a9e77-687b-43e4-ac9e-978df998556f" />
 
