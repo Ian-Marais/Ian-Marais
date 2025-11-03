@@ -35,8 +35,8 @@ Made in Delphi 12
 <img width="1870" height="1069" alt="Screenshot 2025-10-22 113353" src="https://github.com/user-attachments/assets/8d5aaa9a-9dfa-4150-97e9-ad92215a5197" />
 ### Snake game 3
 Made in Delphi 12
-![Recording 2025-10-21 214526](https://github.com/user-attachments/assets/a84fb9ee-db43-4641-9a19-df87955515d5)
 ![Recording 2025-10-22 124609](https://github.com/user-attachments/assets/ecb780d7-7092-4633-bf10-09708e4f1b78)
+![Recording 2025-10-21 214526](https://github.com/user-attachments/assets/a84fb9ee-db43-4641-9a19-df87955515d5)
 
 ### Hidden item game
 Made in Delphi 12
