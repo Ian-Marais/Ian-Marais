@@ -1,6 +1,6 @@
 ### My Personal Website
 Made in WordPress
-https://ianmarais.com/
+(https://ianmarais.com/)
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4178818c-46d5-4b8e-ab7c-324a8f61d3ba" />
 
 ### Business website
