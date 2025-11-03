@@ -13,7 +13,7 @@ Made in WordPress
 
 ### Online Remote Support Business Website
 Made with HTML, CSS & Bootstrap
-(https://Ian-Marais.github.io/Remote_Support/#contact)
+(https://Ian-Marais.github.io/Remote_Support/)
 <img width="1785" height="944" alt="Screenshot 2025-10-21 202552" src="https://github.com/user-attachments/assets/89657fbc-4f9f-4115-af06-e171834c5287" />
 
 
