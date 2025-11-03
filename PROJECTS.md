@@ -32,7 +32,6 @@ Made with HTML
 ### Snake game 2
 Made in Delphi 12
 ![Recording 2025-10-21 214350](https://github.com/user-attachments/assets/877a831b-a95a-45cc-b1e1-70b9a64fd5fa)
-![Recording 2025-10-22 113519](https://github.com/user-attachments/assets/d3f7311e-97b1-4b3c-b739-77af88693943)
 <img width="1870" height="1069" alt="Screenshot 2025-10-22 113353" src="https://github.com/user-attachments/assets/8d5aaa9a-9dfa-4150-97e9-ad92215a5197" />
 <img width="1860" height="1061" alt="Screenshot 2025-10-22 113407" src="https://github.com/user-attachments/assets/dbff24f7-1995-48a4-a83f-c5a3e5acac59" />
 
