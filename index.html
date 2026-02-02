@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ian Marais</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<style>
+/* inlined styles.css to avoid file:// loading issues */
+:root{
+	--bg:#111213;
+	--muted:#bdbdbd;
+	--accent:#ffffff;
+}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+	body{
+	font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+	font-weight:300;
+	background:var(--bg);
+	color:var(--accent);
+	overflow:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+#tsparticles{position:fixed;inset:0;z-index:0}
+.site-header{position:fixed;top:18px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.site-header nav ul{list-style:none;margin:0;padding:0;display:flex}
+.site-header .cv-link{color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:2px;font-size:0.95rem;padding:6px 8px;border-radius:4px}
+.site-header .cv-link:hover{color:var(--accent)}
+.site-title{color:var(--accent);font-weight:500;font-size:1rem}
+.home-link{text-decoration:none;color:inherit}
+.hero{position:relative;z-index:2;min-height:100vh;display:grid;place-items:center;padding:40px;text-align:center}
+.hero-inner{max-width:900px}
+.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.04);box-shadow:0 8px 40px rgba(0,0,0,0.6);margin:0 auto 22px;display:block}
+.name{font-weight:500;font-size:4.2rem;margin:6px 0;color:#f5f5f5;letter-spacing:1px}
+.slogan{color:var(--muted);font-size:1.05rem;margin:12px 0 26px}
+.icons{display:flex;gap:14px;justify-content:center;align-items:center;margin-top:18px}
+.icons a{color:var(--muted);text-decoration:none;font-size:1rem;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:6px;background:rgba(255,255,255,0.02);transition:all .18s}
+.icons a:hover{color:var(--accent);transform:translateY(-4px);background:rgba(255,255,255,0.03)}
+.icons i{font-size:18px}
+@media (max-width:720px){
+	.name{font-size:2.6rem}
+	.avatar{width:110px;height:110px}
+}
+
+/* acrylic content panel below hero */
+.content-area{position:relative;z-index:3;padding:36px 24px 80px 24px;background:transparent}
+.content-panel{max-width:1100px;margin:28px auto;padding:40px;border-radius:14px;background:rgba(18,18,18,0.62);box-shadow:0 6px 30px rgba(0,0,0,0.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
+.content-panel h2{font-size:1.6rem;margin-bottom:8px;color:#fff}
+.content-panel p{color:rgba(255,255,255,0.88);line-height:1.6;font-size:1.05rem;margin:8px 0}
+@media (max-width:720px){
+	.content-panel{margin:18px 12px;padding:22px}
+	.content-panel h2{font-size:1.25rem}
+	.content-panel p{font-size:0.98rem}
+}
+
+/* Projects and skills */
+.projects-panel{max-width:1100px;margin:28px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}
+.project-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.project-card h3{margin:0 0 8px 0;font-size:1.05rem}
+.project-card p{margin:0;font-size:0.95rem;color:rgba(255,255,255,0.82)}
+.skills-panel{max-width:1100px;margin:28px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
+.skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.skill-badge{padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:999px;font-size:0.95rem}
+@media (max-width:960px){
+	.projects-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+	.projects-grid{grid-template-columns:1fr}
+}
+
+/* header nav link styling */
+.nav-link{color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:1.4px;margin-right:18px;padding:6px}
+.nav-link:hover{color:var(--accent)}
+
+/* Footer */
+.site-footer{padding:28px 20px;background:transparent;color:var(--muted);text-align:center}
+.site-footer a{color:var(--muted);text-decoration:none}
+
+
+	</style>
+</head>
+<body>
+	<div id="tsparticles"></div>
+
+	<header class="site-header">
+		<div class="site-title"><a class="home-link" href="#top">Ian Marais</a></div>
+		<nav>
+			<ul>
+				<li class="nav-right"><a class="cv-link" href="CV.docx" title="Download CV" download target="_blank" rel="noopener">CV</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="hero">
+		<div class="hero-inner">
+			<img class="avatar" src="https://i.pravatar.cc/220?u=ian.marais" alt="Ian Marais">
+			<h1 class="name">Ian Marais</h1>
+			<p class="slogan">Gamer, Developer, Crypto Enthusiast & PC builder</p>
+
+			<div class="icons">
+				<a href="https://github.com/Ian-Marais" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+				<a href="https://discord.com/users/252512214349643776" aria-label="Discord" title="Discord" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
+				<a href="https://www.linkedin.com/in/ian-marais-179677215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=me@ianmarais.com" aria-label="Compose to me@ianmarais.com" title="Compose to me@ianmarais.com" target="_blank" rel="noopener"><i class="fa-regular fa-envelope"></i></a>
+				<a href="https://steamcommunity.com/id/zenderian0/" aria-label="Steam" title="Steam" target="_blank" rel="noopener"><i class="fab fa-steam"></i></a>
+				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ian2marais@gmail.com" aria-label="Gmail" title="Compose to ian2marais@gmail.com" target="_blank" rel="noopener"><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+	</main>
+
+	<!-- Content area below hero with acrylic background -->
+	<section class="content-area" id="about">
+	  <div class="content-panel">
+	    <h2>Hey!</h2>
+	    <p>I’m Ian Marais — I love gaming, building PCs, developing software and following the crypto space.
+            I build tools that improves efficiency not only in my life but others lives, play old games (because they are the best) as well as survival games, build custom PCs for people, write basic games, following Crypto trends and mostly buying/selling Etherium.</p>
+	  </div>
+	</section>
+
+	<!-- Projects -->
+	<section class="projects-panel" id="projects">
+	  <h2>Selected Projects</h2>
+	  <div class="projects-grid">
+	    <div class="project-card">
+	      <img src="https://picsum.photos/seed/p1/800/450" alt="project" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+	      <h3>Game Tools</h3>
+	      <p>Utility tools and mods built for PC gaming — performance overlays, config helpers and small automation utilities.</p>
+	    </div>
+	    <div class="project-card">
+	      <img src="https://picsum.photos/seed/p2/800/450" alt="project" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+	      <h3>Crypto Portfolio</h3>
+	      <p>A personal portfolio tracker for monitoring positions, P&L and on-chain activity with lightweight privacy-first views.</p>
+	    </div>
+	    <div class="project-card">
+	      <img src="https://picsum.photos/seed/p3/800/450" alt="project" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+	      <h3>PC Builder Guide</h3>
+	      <p>A curated guide and checklist for planning and building custom PCs — part lists, compatibility checks and assembly tips.</p>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- Skills -->
+	<section class="skills-panel" id="skills">
+	  <h2>Skills & Tools</h2>
+	  <div class="skills-list">
+	    <div class="skill-badge">JavaScript</div>
+	    <div class="skill-badge">Node.js</div>
+	    <div class="skill-badge">React</div>
+	    <div class="skill-badge">Rust</div>
+	    <div class="skill-badge">Docker</div>
+	    <div class="skill-badge">Linux</div>
+	    <div class="skill-badge">PC Building</div>
+	  </div>
+	</section>
+
+
+
+
+	<!-- Projects -->
+	<section class="projects-panel">
+	  <h2>Projects</h2>
+	  <div class="projects-grid">
+	    <div class="project-card">
+	      <h3>Project One</h3>
+	      <p>Short description of project one. Links, tech stack and a short blurb go here.</p>
+	    </div>
+	    <div class="project-card">
+	      <h3>Project Two</h3>
+	      <p>Short description of project two. Links, tech stack and a short blurb go here.</p>
+	    </div>
+	    <div class="project-card">
+	      <h3>Project Three</h3>
+	      <p>Short description of project three. Links, tech stack and a short blurb go here.</p>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- Skills -->
+	<section class="skills-panel">
+	  <h2>Skills</h2>
+	  <div class="skills-list">
+	    <div class="skill-badge">JavaScript</div>
+	    <div class="skill-badge">Node.js</div>
+	    <div class="skill-badge">React</div>
+	    <div class="skill-badge">Rust</div>
+	    <div class="skill-badge">Docker</div>
+	    <div class="skill-badge">PC Building</div>
+	  </div>
+	</section>
+
+	
+	<!-- Footer -->
+	<footer class="site-footer">
+	  <p>© Ian Marais — <a href="mailto:me@ianmarais.com">me@ianmarais.com</a></p>
+	</footer>
+
+		<script>
+		// Local canvas particle background — works with file:// and no external CDN
+		(function () {
+			const container = document.getElementById('tsparticles');
+			const canvas = document.createElement('canvas');
+			canvas.style.position = 'fixed';
+			canvas.style.inset = '0';
+			canvas.style.width = '100%';
+			canvas.style.height = '100%';
+			canvas.style.zIndex = '0';
+			canvas.style.pointerEvents = 'none';
+			container.appendChild(canvas);
+
+			const ctx = canvas.getContext('2d');
+			let width = 0, height = 0, dpr = Math.max(1, window.devicePixelRatio || 1);
+
+			function resize() {
+				width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+				height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+				canvas.width = Math.round(width * dpr);
+				canvas.height = Math.round(height * dpr);
+				canvas.style.width = width + 'px';
+				canvas.style.height = height + 'px';
+				ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+			}
+
+			const settings = {
+				count: Math.min(110, Math.round((width || 1200) / 12)),
+				maxDistance: 140,
+				speed: 0.36,
+				dotSize: { min: 0.8, max: 2.6 }
+			};
+
+			let particles = [];
+
+			function rand(min, max) { return Math.random() * (max - min) + min; }
+
+			function createParticles() {
+				particles = [];
+				const cnt = Math.round((width || 1200) / 10);
+				for (let i = 0; i < Math.max(60, cnt); i++) {
+					particles.push({
+						x: rand(0, width),
+						y: rand(0, height),
+						vx: rand(-settings.speed, settings.speed),
+						vy: rand(-settings.speed, settings.speed),
+						r: rand(settings.dotSize.min, settings.dotSize.max)
+					});
+				}
+			}
+
+			let mouse = { x: null, y: null };
+			window.addEventListener('mousemove', (e) => {
+				mouse.x = e.clientX;
+				mouse.y = e.clientY;
+			});
+			window.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
+			window.addEventListener('resize', () => { resize(); createParticles(); });
+
+			function step() {
+				ctx.clearRect(0, 0, width, height);
+				// draw links
+				for (let i = 0; i < particles.length; i++) {
+					const p = particles[i];
+					for (let j = i + 1; j < particles.length; j++) {
+						const q = particles[j];
+						const dx = p.x - q.x;
+						const dy = p.y - q.y;
+						const dist = Math.sqrt(dx * dx + dy * dy);
+						if (dist < settings.maxDistance) {
+							const alpha = (1 - dist / settings.maxDistance) * 0.12;
+							ctx.beginPath();
+							ctx.strokeStyle = 'rgba(158,158,160,' + alpha + ')';
+							ctx.lineWidth = 1;
+							ctx.moveTo(p.x, p.y);
+							ctx.lineTo(q.x, q.y);
+							ctx.stroke();
+						}
+					}
+				}
+
+				// move and draw particles
+				for (let i = 0; i < particles.length; i++) {
+					const p = particles[i];
+
+					  // small random jitter to keep motion organic (no attraction to center)
+					  p.vx += (Math.random() - 0.5) * 0.0006;
+					  p.vy += (Math.random() - 0.5) * 0.0006;
+
+					p.x += p.vx;
+					p.y += p.vy;
+
+					// wrap
+					if (p.x < -10) p.x = width + 10;
+					if (p.x > width + 10) p.x = -10;
+					if (p.y < -10) p.y = height + 10;
+					if (p.y > height + 10) p.y = -10;
+
+					ctx.beginPath();
+					ctx.fillStyle = 'rgba(191,191,191,0.92)';
+					ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+					ctx.fill();
+				}
+
+				// mouse interaction: draw lines to nearby particles
+				if (mouse.x !== null) {
+					for (let i = 0; i < particles.length; i++) {
+						const p = particles[i];
+						const dx = p.x - mouse.x;
+						const dy = p.y - mouse.y;
+						const dist = Math.sqrt(dx * dx + dy * dy);
+						if (dist < settings.maxDistance) {
+							const a = (1 - dist / settings.maxDistance) * 0.18;
+							ctx.beginPath();
+							ctx.strokeStyle = 'rgba(158,158,160,' + a + ')';
+							ctx.lineWidth = 1;
+							ctx.moveTo(p.x, p.y);
+							ctx.lineTo(mouse.x, mouse.y);
+							ctx.stroke();
+						}
+					}
+				}
+
+				requestAnimationFrame(step);
+			}
+
+			// init
+			resize();
+			createParticles();
+			requestAnimationFrame(step);
+		})();
+		</script>
+</body>
+</html>
