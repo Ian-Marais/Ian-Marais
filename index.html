@@ -4,6 +4,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Ian Marais</title>
+	<link rel="icon" href="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/avatar.jpeg" type="image/jpeg">
+	<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/avatar.jpeg">
+	<meta name="description" content="Ian Marais — Experienced web developer, software engineer and PC builder. I build responsive websites and web apps using JavaScript, TypeScript, React and Node.js. Available for hire for remote and contract roles; I focus on performance, usability and efficient tooling.">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 	<style>
@@ -30,11 +33,16 @@ html,body{height:100%}
 .site-header nav ul{list-style:none;margin:0;padding:0;display:flex}
 .site-header .cv-link{color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:2px;font-size:0.95rem;padding:6px 8px;border-radius:4px}
 .site-header .cv-link:hover{color:var(--accent)}
+.icon-btn{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--muted);width:36px;height:36px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:all .16s}
+.icon-btn:hover{transform:translateY(-3px);color:var(--accent);background:rgba(255,255,255,0.035)}
+.top-btn{visibility:hidden;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s}
+.top-btn.visible{visibility:visible;opacity:1;pointer-events:auto;transform:translateY(-3px)}
+.site-title{color:var(--accent);font-weight:500;font-size:1rem;display:flex;align-items:center;gap:10px}
 .site-title{color:var(--accent);font-weight:500;font-size:1rem}
 .home-link{text-decoration:none;color:inherit}
 .hero{position:relative;z-index:2;min-height:100vh;display:grid;place-items:center;padding:40px;text-align:center}
 .hero-inner{max-width:900px}
-.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.04);box-shadow:0 8px 40px rgba(0,0,0,0.6);margin:0 auto 22px;display:block}
+.avatar{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.04);box-shadow:0 8px 40px rgba(0,0,0,0.6);margin:0 auto 22px;display:block}
 .name{font-weight:500;font-size:4.2rem;margin:6px 0;color:#f5f5f5;letter-spacing:1px}
 .slogan{color:var(--muted);font-size:1.05rem;margin:12px 0 26px}
 .icons{display:flex;gap:14px;justify-content:center;align-items:center;margin-top:18px}
@@ -43,7 +51,7 @@ html,body{height:100%}
 .icons i{font-size:18px}
 @media (max-width:720px){
 	.name{font-size:2.6rem}
-	.avatar{width:110px;height:110px}
+	.avatar{width:160px;height:160px}
 }
 
 /* acrylic content panel below hero */
@@ -88,27 +96,26 @@ html,body{height:100%}
 	<div id="tsparticles"></div>
 
 	<header class="site-header">
-		<div class="site-title"><a class="home-link" href="#top">Ian Marais</a></div>
+		<div class="site-title"><a class="home-link" href="index.html">Ian Marais</a><button class="icon-btn top-btn" title="Back to top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button></div>
 		<nav>
 			<ul>
-				<li class="nav-right"><a class="cv-link" href="CV.docx" title="Download CV" download target="_blank" rel="noopener">CV</a></li>
+				<li class="nav-right"><a class="cv-link" href="CV.docx" title="Download CV" download target="_blank" rel="noopener">Curriculum Vitae (CV)</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main class="hero">
 		<div class="hero-inner">
-			<img class="avatar" src="https://i.pravatar.cc/220?u=ian.marais" alt="Ian Marais">
+			<img class="avatar" src="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/avatar.jpeg" alt="Ian Marais">
 			<h1 class="name">Ian Marais</h1>
 			<p class="slogan">Gamer, Developer, Crypto Enthusiast & PC builder</p>
 
 			<div class="icons">
 				<a href="https://github.com/Ian-Marais" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-				<a href="https://discord.com/users/252512214349643776" aria-label="Discord" title="Discord" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
-				<a href="https://www.linkedin.com/in/ian-marais-179677215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=me@ianmarais.com" aria-label="Compose to me@ianmarais.com" title="Compose to me@ianmarais.com" target="_blank" rel="noopener"><i class="fa-regular fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/ian-marais-179677215" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+				<a href="mailto:me@ianmarais.com" aria-label="Email me@ianmarais.com" title="Email me@ianmarais.com"><i class="fa-regular fa-envelope"></i></a>
 				<a href="https://steamcommunity.com/id/zenderian0/" aria-label="Steam" title="Steam" target="_blank" rel="noopener"><i class="fab fa-steam"></i></a>
-				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ian2marais@gmail.com" aria-label="Gmail" title="Compose to ian2marais@gmail.com" target="_blank" rel="noopener"><i class="fab fa-google"></i></a>
+				<a href="mailto:ian2marais@gmail.com" aria-label="Email ian2marais@gmail.com" title="Email ian2marais@gmail.com"><i class="fab fa-google"></i></a>
 			</div>
 		</div>
 	</main>
@@ -118,42 +125,117 @@ html,body{height:100%}
 	  <div class="content-panel">
 	    <h2>Hey!</h2>
 	    <p>I’m Ian Marais — I love gaming, building PCs, developing software and following the crypto space.
-            I build tools that improves efficiency not only in my life but others lives, play old games (because they are the best) as well as survival games, build custom PCs for people, write basic games, following Crypto trends and mostly buying/selling Etherium.</p>
+            I build tools that improves efficiency not only in my life but other peoples lives, play old games (because they are the best) as well as survival games, build custom PCs for people, write basic games, following Crypto trends and mostly buying/selling Etherium.</p>
 	  </div>
 	</section>
 
-	<!-- Projects -->
-	<section class="projects-panel" id="projects">
-	  <h2>Selected Projects</h2>
-	  <div class="projects-grid">
-	    <div class="project-card">
-	      <img src="https://picsum.photos/seed/p1/800/450" alt="project" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-	      <h3>Game Tools</h3>
-	      <p>Utility tools and mods built for PC gaming — performance overlays, config helpers and small automation utilities.</p>
-	    </div>
-	    <div class="project-card">
-	      <img src="https://picsum.photos/seed/p2/800/450" alt="project" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-	      <h3>Crypto Portfolio</h3>
-	      <p>A personal portfolio tracker for monitoring positions, P&L and on-chain activity with lightweight privacy-first views.</p>
-	    </div>
-	    <div class="project-card">
-	      <img src="https://picsum.photos/seed/p3/800/450" alt="project" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-	      <h3>PC Builder Guide</h3>
-	      <p>A curated guide and checklist for planning and building custom PCs — part lists, compatibility checks and assembly tips.</p>
-	    </div>
-	  </div>
-	</section>
+		<!-- Websites -->
+		<section class="projects-panel" id="websites">
+			<h2>Websites I've built</h2>
+			<div class="projects-grid">
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/site1/800/450" alt="portfolio site" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Personal Portfolio</h3>
+					<p>A responsive portfolio site showcasing projects, blog posts and contact details — built with modern HTML/CSS and optimized for performance.</p>
+				</div>
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/site2/800/450" alt="ecommerce" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>E‑commerce Store</h3>
+					<p>A lightweight store front with product pages, cart and checkout flow — integrated with payment provider and SEO-friendly routing.</p>
+				</div>
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/site3/800/450" alt="landing" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Marketing Landing Pages</h3>
+					<p>High-converting landing pages and A/B tested designs for campaigns and product launches.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Apps -->
+		<section class="projects-panel" id="apps">
+			<h2>Apps I've built</h2>
+			<div class="projects-grid">
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/app1/800/450" alt="crypto app" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Crypto Portfolio</h3>
+					<p>A privacy-first portfolio tracker for monitoring positions, P&L and on-chain activity — built with Node.js and React.</p>
+				</div>
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/app2/800/450" alt="pc builder app" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>PC Builder App</h3>
+					<p>An interactive app for planning PC builds with compatibility checks, part lists and exportable BOMs.</p>
+				</div>
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/app3/800/450" alt="utility tools" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Utility Tools</h3>
+					<p>Small productivity and automation utilities — config helpers, overlays and CLI tools to speed up workflows.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Games -->
+		<section class="projects-panel" id="games">
+			<h2>Games I've built</h2>
+			<div class="projects-grid">
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/game1/800/450" alt="retro shooter" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Retro Shooter</h3>
+					<p>A small 2D shooter prototype inspired by classic arcade games — focused on tight controls and performance.</p>
+				</div>
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/game2/800/450" alt="puzzle game" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Puzzle Game</h3>
+					<p>A logic-based puzzle game with procedurally generated levels and simple save/load features.</p>
+				</div>
+				<div class="project-card">
+					<img src="https://picsum.photos/seed/game3/800/450" alt="survival prototype" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Survival Prototype</h3>
+					<p>A work-in-progress survival game prototype demonstrating inventory, crafting and basic AI behaviors.</p>
+				</div>
+			</div>
+		</section>
 
 	<!-- Skills -->
 	<section class="skills-panel" id="skills">
-	  <h2>Skills & Tools</h2>
+	  <h2>Skills & Technologies</h2>
 	  <div class="skills-list">
+	    <!-- Languages -->
+	    <div class="skill-badge">HTML</div>
+	    <div class="skill-badge">CSS</div>
 	    <div class="skill-badge">JavaScript</div>
+	    <div class="skill-badge">TypeScript</div>
+	    <div class="skill-badge">Python</div>
+	    <div class="skill-badge">PHP</div>
+	    <div class="skill-badge">Delphi</div>
+
+	    <!-- Frontend & Frameworks -->
+	    <div class="skill-badge">React.js</div>
+	    <div class="skill-badge">Vue.js</div>
+	    <div class="skill-badge">Next.js</div>
+	    <div class="skill-badge">Bootstrap</div>
+
+	    <!-- Backend / APIs & DB -->
 	    <div class="skill-badge">Node.js</div>
-	    <div class="skill-badge">React</div>
-	    <div class="skill-badge">Rust</div>
-	    <div class="skill-badge">Docker</div>
+	    <div class="skill-badge">REST API</div>
+	    <div class="skill-badge">PostgreSQL</div>
+
+	    <!-- CMS / App Platforms -->
+	    <div class="skill-badge">WordPress</div>
+	    <div class="skill-badge">FireMonkey (FMX)</div>
+
+	    <!-- VCS / AI / Tools -->
+	    <div class="skill-badge">Git</div>
+	    <div class="skill-badge">GitHub</div>
+	    <div class="skill-badge">GitHub Copilot</div>
+	    <div class="skill-badge">Claude Code</div>
+
+	    <!-- Shells & OS -->
+	    <div class="skill-badge">Bash</div>
+	    <div class="skill-badge">PowerShell</div>
 	    <div class="skill-badge">Linux</div>
+	    <div class="skill-badge">Windows</div>
+
+	    <!-- Other -->
 	    <div class="skill-badge">PC Building</div>
 	  </div>
 	</section>
@@ -161,37 +243,9 @@ html,body{height:100%}
 
 
 
-	<!-- Projects -->
-	<section class="projects-panel">
-	  <h2>Projects</h2>
-	  <div class="projects-grid">
-	    <div class="project-card">
-	      <h3>Project One</h3>
-	      <p>Short description of project one. Links, tech stack and a short blurb go here.</p>
-	    </div>
-	    <div class="project-card">
-	      <h3>Project Two</h3>
-	      <p>Short description of project two. Links, tech stack and a short blurb go here.</p>
-	    </div>
-	    <div class="project-card">
-	      <h3>Project Three</h3>
-	      <p>Short description of project three. Links, tech stack and a short blurb go here.</p>
-	    </div>
-	  </div>
-	</section>
+	<!-- duplicate Projects section removed -->
 
-	<!-- Skills -->
-	<section class="skills-panel">
-	  <h2>Skills</h2>
-	  <div class="skills-list">
-	    <div class="skill-badge">JavaScript</div>
-	    <div class="skill-badge">Node.js</div>
-	    <div class="skill-badge">React</div>
-	    <div class="skill-badge">Rust</div>
-	    <div class="skill-badge">Docker</div>
-	    <div class="skill-badge">PC Building</div>
-	  </div>
-	</section>
+		<!-- duplicate Skills section removed -->
 
 	
 	<!-- Footer -->
@@ -331,5 +385,27 @@ html,body{height:100%}
 			requestAnimationFrame(step);
 		})();
 		</script>
+
+			<script>
+			// Refresh and Back-to-top button handlers
+			(function(){
+				const topBtn = document.querySelector('.top-btn');
+
+				function updateTopBtn(){
+					if(!topBtn) return;
+					if(window.scrollY > 220) topBtn.classList.add('visible');
+					else topBtn.classList.remove('visible');
+				}
+
+				window.addEventListener('scroll', updateTopBtn);
+				window.addEventListener('load', updateTopBtn);
+
+				if(topBtn){
+					topBtn.addEventListener('click', function(){
+						window.scrollTo({top:0,behavior:'smooth'});
+					});
+				}
+			})();
+			</script>
 </body>
 </html>
