@@ -1,0 +1,1 @@
+1. For projects, come up with 3 for each section. Let Copilot come up with a name and description for them. Don't add to website yet. Just come up with 3.
