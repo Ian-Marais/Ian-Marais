@@ -67,11 +67,15 @@ html,body{height:100%}
 
 /* Projects and skills */
 .projects-panel{max-width:1100px;margin:14px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
-.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}
-.project-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px;align-items:stretch}
+.project-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);display:flex;flex-direction:column}
+.project-card.no-frame{background:transparent;border:none;box-shadow:none}
 .project-card h3{margin:0 0 8px 0;font-size:1.05rem}
 .project-card p{margin:0;font-size:0.95rem;color:rgba(255,255,255,0.82)}
-.projects-panel#websites .project-card img{cursor:pointer;width:100%;height:220px;object-fit:cover;display:block}
+.projects-panel#websites .project-card img,
+.projects-panel#apps .project-card img,
+.projects-panel#games .project-card img{cursor:pointer;width:100%;height:220px;object-fit:cover;display:block}
+.projects-panel#games .project-card{min-height:420px;display:flex;flex-direction:column}
 .skills-panel{max-width:1100px;margin:28px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
 .skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
 .skill-badge{padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:999px;font-size:0.95rem}
@@ -189,16 +193,6 @@ html,body{height:100%}
 					<img src="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/assets/Hidden%20Treasures.png" alt="Hidden Treasures" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
 					<h3>Hidden Treasures</h3>
 					<p>A hidden objects game where players search for items in richly illustrated scenes, includes timed challenges, hints, and progressive difficulty.</p>
-				</div>
-				<div class="project-card">
-					<img src="https://picsum.photos/seed/game2/800/450" alt="puzzle game" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-					<h3>Puzzle Game</h3>
-					<p>A logic-based puzzle game with procedurally generated levels and simple save/load features.</p>
-				</div>
-				<div class="project-card">
-					<img src="https://picsum.photos/seed/game3/800/450" alt="survival prototype" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-					<h3>Survival Prototype</h3>
-					<p>A work-in-progress survival game prototype demonstrating inventory, crafting and basic AI behaviors.</p>
 				</div>
 			</div>
 		</section>
