@@ -40,7 +40,7 @@ html,body{height:100%}
 .site-title{color:var(--accent);font-weight:500;font-size:1rem;display:flex;align-items:center;gap:10px}
 .site-title{color:var(--accent);font-weight:500;font-size:1rem}
 .home-link{text-decoration:none;color:inherit}
-.hero{position:relative;z-index:2;min-height:72vh;display:grid;place-items:center;padding:40px;text-align:center}
+.hero{position:relative;z-index:2;min-height:36vh;display:grid;place-items:center;padding:20px;text-align:center}
 .hero-inner{max-width:900px}
 .avatar{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.04);box-shadow:0 8px 40px rgba(0,0,0,0.6);margin:0 auto 22px;display:block}
 .name{font-weight:500;font-size:4.2rem;margin:6px 0;color:#f5f5f5;letter-spacing:1px}
@@ -55,7 +55,7 @@ html,body{height:100%}
 }
 
 /* acrylic content panel below hero */
-.content-area{position:relative;z-index:3;padding:36px 24px 80px 24px;background:transparent}
+.content-area{position:relative;z-index:3;padding:36px 24px 20px 24px;background:transparent}
 .content-panel{max-width:1100px;margin:28px auto;padding:40px;border-radius:14px;background:rgba(18,18,18,0.62);box-shadow:0 6px 30px rgba(0,0,0,0.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
 .content-panel h2{font-size:1.6rem;margin-bottom:8px;color:#fff}
 .content-panel p{color:rgba(255,255,255,0.88);line-height:1.6;font-size:1.05rem;margin:8px 0}
@@ -66,12 +66,12 @@ html,body{height:100%}
 }
 
 /* Projects and skills */
-.projects-panel{max-width:1100px;margin:28px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
+.projects-panel{max-width:1100px;margin:14px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}
 .project-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
 .project-card h3{margin:0 0 8px 0;font-size:1.05rem}
 .project-card p{margin:0;font-size:0.95rem;color:rgba(255,255,255,0.82)}
-.project-card img{cursor:pointer}
+.projects-panel#websites .project-card img{cursor:pointer;width:100%;height:220px;object-fit:cover;display:block}
 .skills-panel{max-width:1100px;margin:28px auto;padding:28px;border-radius:12px;background:rgba(18,18,18,0.64);box-shadow:0 6px 28px rgba(0,0,0,0.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03);color:var(--accent)}
 .skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
 .skill-badge{padding:8px 12px;background:rgba(255,255,255,0.03);border-radius:999px;font-size:0.95rem}
@@ -142,19 +142,19 @@ html,body{height:100%}
 			<h2>Websites I've built</h2>
 			<div class="projects-grid">
 				<div class="project-card">
-					<img src="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/assets/Pinnacle.png" alt="Pinnacle Portal" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-					<h3>Pinnacle Portal</h3>
-					<p>A hotel operations platform built with HTML, CSS, JavaScript, PHP and Bootstrap. Uses Leaflet for map views and Grafana for dashboards; the API was implemented in Delphi. Users can view hotels, drill into individual floors, and inspect devices (leak detectors, smoke detectors) per floor for real-time status and alerts.</p>
+					<img src="assets/RS Design website.png" alt="RS Design website" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>RS Design website</h3>
+					<p>A website for a graphics & video designer showcasing current, previous work & and services with prices. https://rs-designs.ianmarais.com/</p>
 				</div>
 				<div class="project-card">
-					<img src="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/assets/Connected%20Sensors.png" alt="Connected Sensors" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-					<h3>Connected Sensors</h3>
-					<p>Built using HTML, CSS, JavaScript, PHP and Bootstrap. Uses Leaflet for map views and Chart.js for charts; the API was implemented in Delphi. Platform to view locations of devices and inspect basic device stats (temperature, speed, etc.).</p>
+					<img src="assets/Karate Kai dojo website.png" alt="Karate Kai dojo website" style="border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>Karate Kai dojo website</h3>
+					<p>A website for a Karate Dojo showcasing their events, builds a history of events and a store that the user can use to buy karate gear. <span style="font-size:0.85rem;display:block;word-break:break-all;">https://primrosekaratekaiinternational.ianmarais.com/</span></p>
 				</div>
 				<div class="project-card">
-					<img src="https://raw.githubusercontent.com/Ian-Marais/Ian-Marais/refs/heads/main/assets/Halo%20Achivement%20tracker.png" alt="Halo Achievement Tracker" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
-					<h3>Halo Achievement Tracker</h3>
-					<p>A comprehensive Halo achievement tracker that lists every in-game achievement and provides clear, step-by-step guides to unlock them. Built with Delphi TMS Web Core and backed by a PHP API.</p>
+					<img src="assets/GTA-Achievement-Tracker.png" alt="GTA Achievement Tracker" style="width:100%;border-radius:8px 8px 6px 6px;margin-bottom:12px;display:block">
+					<h3>GTA Achievement Tracker</h3>
+					<p>A comprehensive GTA achievement tracker that lists every in-game achievement and provides clear, step-by-step guides to unlock them. Built with Delphi TMS Web Core and backed by a PHP API.</p>
 				</div>
 			</div>
 		</section>

@@ -4,7 +4,7 @@
 |----------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | Pinnacle Portal   | A hotel operations platform built with HTML, CSS, JavaScript, PHP and Bootstrap. Uses Leaflet for map views and Grafana for dashboards; the API was implemented in Delphi. Users can view hotels, drill into individual floors, and inspect devices (leak detectors, smoke detectors) per floor for real-time status and alerts. | Screenshot of a hotel operations dashboard with map, floor plans, and device status panels. |
 | ProjectPulse   | An internal project tracking dashboard with timelines, task assignments, and progress charts — powered by Grafana for analytics and reporting, with Postgres as the data source. | Screenshot of a project dashboard with timelines, task list, and Grafana charts in 16:9 aspect ratio. |
-| Halo Achievement Tracker | A comprehensive Halo achievement tracker that lists every in-game achievement and provides clear, step-by-step guides to unlock them. Built with Delphi TMS Web Core and backed by a PHP API. | Screenshot of an achievements list and guides; image available at https://github-production-user-asset-6210df.s3.amazonaws.com/5418178/319364085-1c7f88d5-d1a9-4930-85fc-d2d9abd58adf.png (16:9). |
+| GTA Achievement Tracker | A comprehensive GTA achievement tracker that lists every in-game achievement and provides clear, step-by-step guides to unlock them. Built with Delphi TMS Web Core and backed by a PHP API. | Screenshot of an achievements list and guides; image available at https://github-production-user-asset-6210df.s3.amazonaws.com/5418178/319364085-1c7f88d5-d1a9-4930-85fc-d2d9abd58adf.png (16:9). |
 
 ---
 
