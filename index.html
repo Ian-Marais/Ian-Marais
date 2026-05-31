@@ -29,10 +29,19 @@ html,body{height:100%}
 	-moz-osx-font-smoothing:grayscale;
 }
 #tsparticles{position:fixed;inset:0;z-index:0}
-.site-header{position:fixed;top:18px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.site-header{position:fixed;top:18px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center;z-index:10}
 .site-header nav ul{list-style:none;margin:0;padding:0;display:flex}
 .site-header .cv-link{color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:2px;font-size:0.95rem;padding:6px 8px;border-radius:4px}
 .site-header .cv-link:hover{color:var(--accent)}
+@media (max-width:720px){
+	.site-header{top:14px;left:16px;right:16px}
+	.site-header .cv-link{font-size:0.78rem;letter-spacing:1px;padding:5px 7px}
+	.hero{padding-top:104px}
+}
+@media (max-width:520px){
+	.site-header .cv-link{font-size:0.72rem;letter-spacing:0.8px;padding:4px 6px}
+	.hero{padding-top:116px}
+}
 .icon-btn{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:var(--muted);width:36px;height:36px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;transition:all .16s}
 .icon-btn:hover{transform:translateY(-3px);color:var(--accent);background:rgba(255,255,255,0.035)}
 .top-btn{visibility:hidden;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;position:fixed;bottom:20px;right:20px;z-index:6;width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center}
